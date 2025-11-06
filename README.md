@@ -41,7 +41,7 @@ Windows ＋ Python 仮想環境で動作確認済み。
 
 ---
 
-## 2. 仮想環境の構築
+## 2. 仮想環境の構築およびライブラリのインストール
 
 ### Windows（PowerShell）
 ```powershell
