@@ -26,7 +26,7 @@ Windows ＋ Python 仮想環境で動作確認済み。
 - レポジトリ構成（抜粋）:
   ```text
   RAG/
-  ├─ data/                  # 自分の資料（PDF/HTML/TXT など）
+  ├─ data/                  # 検索対象のデータ（PDF/HTML/TXT など）
   ├─ storage/               # ベクトル索引（自動生成・配布不要）
   ├─ rag/
   │   ├─ embedding/         # Jina / OpenAI / Zhipu の埋め込み実装
