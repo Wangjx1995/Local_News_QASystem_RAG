@@ -165,8 +165,8 @@ python -m scripts.ask --storage storage --k 4 --llm-backend internlm2 --llm-mode
 ## 7. 基本機能と付加機能
 
 ### 基本機能
-- **自前データ**の取り込み（PDF/HTML/TXT）→ チャンク分割（`--chunk/--overlap`）
-- **埋め込み**：Jina / OpenAI / Zhipu を切替可能（本 README では Jina 推奨）
+- **データ**の取り込み（PDF/HTML/TXT）→ チャンク分割（`--chunk/--overlap`）
+- **索引の生成と埋め込み**：Jina / OpenAI / Zhipu を切替可能（本 README では Jina 推奨）
 - **ベクトル検索** + **BM25**（ハイブリッド検索）
 - **RAG 生成**：OpenAI（クラウド） / 互換 API（LM Studio / Ollama） / NoLLM（抽出）
 
@@ -185,10 +185,10 @@ python -m scripts.ask --storage storage --k 4 --llm-backend internlm2 --llm-mode
 ## 8. よくあるエラーと対処
 
 - **`ModuleNotFoundError: dotenv`**  
-  → `pip install python-dotenv`。`.venv` が有効か確認。
+  → `pip install python-dotenv`。`.venv` が有効かを確認。
 
 - **`JINA_API_KEY 未配置/未設定`**  
-  → `.env` のキー名を確認し、`load_dotenv(find_dotenv(..., usecwd=True))` で読み込めているか確認。
+  → `.env` のキー名を確認し、`load_dotenv(find_dotenv(..., usecwd=True))` で読み込めているかを確認。
 
 - **Jina で `422`**（モデルタグ不一致）  
   → `jina-embeddings-v3` を使用。rerank も API の対応モデルへ。
@@ -221,4 +221,4 @@ python -m scripts.ask --storage storage --k 4 --llm-backend internlm2 --llm-mode
 ---
 
 ### 連絡
-問題や改善提案は Issue へどうぞ。環境情報（OS/CPU/GPU、Python 版、エラー全文）を添付いただけると助かります。
+問題や改善提案は Issue へお願いします。各種情報（OS/CPU/GPU、Pythonバージョン、エラー全文など）を添付いただけると助かります。
